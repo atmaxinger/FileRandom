@@ -61,7 +61,7 @@ namespace fileRandom
 
 		private string getNameFromPath(string path)
 		{
-			var splitted = path.Split('\\');
+			var splitted = path.Split(Path.DirectorySeparatorChar);
 			return splitted.Last();
 		}
 	}
